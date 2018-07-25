@@ -1,0 +1,17 @@
+# useful things
+
+how to do series [= vector] indexing:
+df.Correct # for just one series [column in this case, but can be row] 
+df[['Correct', 'Learning_element']] # for more than one series
+
+shift/cntl + tab when the cursor is between the curly brackets os a function gives you all the options
+
+df.shape = matlab size
+df.shape[0] = row length
+df.shape[1] = column length
+df.head(n) - gives you first n rows of df
+df.tail(n) - gives you the last n rows of df
+df.info() - gives you a load of info about your dataframe
+df.fieldname.value_counts(normalize=False, sort=True, ascending=False, bins=None, dropna=True) 
+this gives you a list of value counts of items in that field, sorted by number. dropna means remove null values
+bins can allow us to make hist

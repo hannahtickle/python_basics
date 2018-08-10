@@ -15,3 +15,12 @@ df.info() - gives you a load of info about your dataframe
 df.fieldname.value_counts(normalize=False, sort=True, ascending=False, bins=None, dropna=True) 
 this gives you a list of value counts of items in that field, sorted by number. dropna means remove null values
 bins can allow us to make hist
+
+df.score==1 - vector of true false
+df[df.score==1] - new dataframe with only those values
+df[(df.score==1) & (df.test_type=='Tapping')] - new dataframe with only those values
+df.loc[df.score==1] - gets you all those ones (how is this different to the one above?)
+df.iloc[[34, 1305, 99]] - gets the rows corresponding to that index
+
+df.user_id.str.contains('example_string')
+

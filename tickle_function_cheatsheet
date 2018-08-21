@@ -24,3 +24,12 @@ df.iloc[[34, 1305, 99]] - gets the rows corresponding to that index
 
 df.user_id.str.contains('example_string')
 
+df.groupby('user_id') actually gives you a load of dataframes, one per unique thing in the thing you're grouping it by. 
+but I don't know how to do anything with the individual dataframes 
+
+
+df_day['num_days'].value_counts().plot
+df_day['num_days'].plot(kind='line', color='plum) these do the same thing (though second one has colour)
+
+you can also make kind = bar, barh, pie
+
